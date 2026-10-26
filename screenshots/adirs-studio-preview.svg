@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="studioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#070a10"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="600" fill="url(#studioBg)"/>
+
+  <!-- Window Header -->
+  <rect width="1000" height="50" fill="#111827" stroke="#1f293d" stroke-width="1"/>
+  <circle cx="25" cy="25" r="6" fill="#f43f5e"/>
+  <circle cx="45" cy="25" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="25" r="6" fill="#10b981"/>
+  <text x="100" y="31" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff">
+    ADIRSForge Pro — Air Data &amp; Inertial Reference Studio (v1.0.0)
+  </text>
+  <rect x="740" y="14" width="235" height="24" rx="4" fill="rgba(16,185,129,0.15)" stroke="#10b981"/>
+  <text x="857" y="30" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">
+    ADIRS NORMAL NAV ENGAGED
+  </text>
+
+  <!-- Left Panel: Controls -->
+  <rect x="20" y="70" width="280" height="505" rx="6" fill="#111827" stroke="#1f293d"/>
+  <text x="35" y="100" font-family="sans-serif" font-size="13" font-weight="bold" fill="#94a3b8">ATTITUDE &amp; AIR DATA INPUTS</text>
+
+  <rect x="35" y="120" width="250" height="35" rx="4" fill="#0d131f" stroke="#334155"/>
+  <text x="45" y="142" font-family="sans-serif" font-size="12" fill="#e2e8f0">Pitch Angle: +4.5° (Nose Up)</text>
+
+  <rect x="35" y="170" width="250" height="35" rx="4" fill="#0d131f" stroke="#334155"/>
+  <text x="45" y="192" font-family="sans-serif" font-size="12" fill="#e2e8f0">Roll Angle: -15.0° (Left Bank)</text>
+
+  <rect x="35" y="220" width="250" height="35" rx="4" fill="#0d131f" stroke="#334155"/>
+  <text x="45" y="242" font-family="sans-serif" font-size="12" fill="#e2e8f0">Heading: 125.0° True | 122.0° Mag</text>
+
+  <rect x="35" y="270" width="250" height="35" rx="4" fill="#0d131f" stroke="#334155"/>
+  <text x="45" y="292" font-family="sans-serif" font-size="12" fill="#e2e8f0">Pressures: Pt=620 hPa, Ps=400 hPa</text>
+
+  <rect x="35" y="320" width="250" height="35" rx="4" fill="#0d131f" stroke="#334155"/>
+  <text x="45" y="342" font-family="sans-serif" font-size="12" fill="#e2e8f0">Alt: 35,000 ft | SAT: -52.0°C</text>
+
+  <rect x="35" y="380" width="250" height="40" rx="4" fill="#06b6d4"/>
+  <text x="160" y="405" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#041421">
+    RECOMPUTE ADIRS
+  </text>
+
+  <!-- Center Panel: PFD & Bus Words -->
+  <rect x="320" y="70" width="370" height="505" rx="6" fill="#111827" stroke="#1f293d"/>
+  <text x="335" y="100" font-family="sans-serif" font-size="13" font-weight="bold" fill="#94a3b8">PRIMARY FLIGHT DISPLAY (PFD)</text>
+
+  <!-- PFD Horizon Screen -->
+  <rect x="335" y="120" width="340" height="200" rx="4" fill="#060911" stroke="#1e293b"/>
+  <g transform="translate(505, 220) rotate(-15)">
+    <rect x="-120" y="-120" width="240" height="120" fill="#0284c7"/>
+    <rect x="-120" y="0" width="240" height="120" fill="#78350f"/>
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#ffffff" stroke-width="2"/>
+    <line x1="-20" y1="-25" x2="20" y2="-25" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="-20" y1="25" x2="20" y2="25" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+  <circle cx="505" cy="220" r="3" fill="#f59e0b"/>
+  <line x1="475" y1="220" x2="495" y2="220" stroke="#f59e0b" stroke-width="3"/>
+  <line x1="515" y1="220" x2="535" y2="220" stroke="#f59e0b" stroke-width="3"/>
+
+  <!-- Speed & Alt Badges -->
+  <rect x="345" y="195" width="45" height="50" rx="2" fill="rgba(15,23,42,0.9)" stroke="#475569"/>
+  <text x="367" y="215" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">CAS</text>
+  <text x="367" y="235" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#ffffff">295</text>
+
+  <rect x="620" y="195" width="45" height="50" rx="2" fill="rgba(15,23,42,0.9)" stroke="#475569"/>
+  <text x="642" y="215" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">ALT</text>
+  <text x="642" y="235" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#ffffff">35000</text>
+
+  <text x="350" y="145" font-family="monospace" font-size="11" fill="#06b6d4">MACH: .817M</text>
+  <text x="590" y="145" font-family="monospace" font-size="11" fill="#10b981">TAS: 477KT</text>
+
+  <text x="335" y="350" font-family="sans-serif" font-size="13" font-weight="bold" fill="#94a3b8">ARINC 429 BUS WORDS (IR &amp; ADR)</text>
+  <rect x="335" y="370" width="340" height="185" rx="4" fill="#090e18" stroke="#1e293b"/>
+  <text x="350" y="395" font-family="monospace" font-size="11" fill="#38bdf8">324 PITCH ANGLE : 0x600EF02B (ODD PARITY)</text>
+  <text x="350" y="425" font-family="monospace" font-size="11" fill="#38bdf8">325 ROLL ANGLE  : 0x61DC74AB (ODD PARITY)</text>
+  <text x="350" y="455" font-family="monospace" font-size="11" fill="#10b981">203 BARO ALT    : 0x828CE843 (35,000 ft)</text>
+  <text x="350" y="485" font-family="monospace" font-size="11" fill="#10b981">205 MACH NUMBER : 0x81A22C85 (0.8167 M)</text>
+  <text x="350" y="515" font-family="monospace" font-size="11" fill="#a855f7">210 TRUE AIRSPEED: 0x81DD0088 (477.3 kts)</text>
+
+  <!-- Right Panel: Auditor -->
+  <rect x="710" y="70" width="270" height="505" rx="6" fill="#111827" stroke="#1f293d"/>
+  <text x="725" y="100" font-family="sans-serif" font-size="13" font-weight="bold" fill="#94a3b8">10-POINT NORMATIVE AUDIT</text>
+
+  <g transform="translate(725, 120)">
+    <rect width="240" height="32" rx="4" fill="#090e18"/>
+    <text x="10" y="20" font-family="sans-serif" font-size="11" fill="#cbd5e1">1. ARINC 429 Bit 32 Parity</text>
+    <text x="210" y="20" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(725, 160)">
+    <rect width="240" height="32" rx="4" fill="#090e18"/>
+    <text x="10" y="20" font-family="sans-serif" font-size="11" fill="#cbd5e1">2. Label Bit-Reversal</text>
+    <text x="210" y="20" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(725, 200)">
+    <rect width="240" height="32" rx="4" fill="#090e18"/>
+    <text x="10" y="20" font-family="sans-serif" font-size="11" fill="#cbd5e1">3. Schuler Tuning (84.4m)</text>
+    <text x="210" y="20" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(725, 240)">
+    <rect width="240" height="32" rx="4" fill="#090e18"/>
+    <text x="10" y="20" font-family="sans-serif" font-size="11" fill="#cbd5e1">4. Gyrocompassing Earth-Rate</text>
+    <text x="210" y="20" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(725, 280)">
+    <rect width="240" height="32" rx="4" fill="#090e18"/>
+    <text x="10" y="20" font-family="sans-serif" font-size="11" fill="#cbd5e1">5. Isentropic Mach Equation</text>
+    <text x="210" y="20" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(725, 320)">
+    <rect width="240" height="32" rx="4" fill="#090e18"/>
+    <text x="10" y="20" font-family="sans-serif" font-size="11" fill="#cbd5e1">6. Baro-Inertial 3rd-Order</text>
+    <text x="210" y="20" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(725, 360)">
+    <rect width="240" height="32" rx="4" fill="#090e18"/>
+    <text x="10" y="20" font-family="sans-serif" font-size="11" fill="#cbd5e1">7. True Airspeed Conversion</text>
+    <text x="210" y="20" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(725, 400)">
+    <rect width="240" height="32" rx="4" fill="#090e18"/>
+    <text x="10" y="20" font-family="sans-serif" font-size="11" fill="#cbd5e1">8. BNR Twos-Complement</text>
+    <text x="210" y="20" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(725, 440)">
+    <rect width="240" height="32" rx="4" fill="#090e18"/>
+    <text x="10" y="20" font-family="sans-serif" font-size="11" fill="#cbd5e1">9. SSM Normal Nav (11b)</text>
+    <text x="210" y="20" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(725, 480)">
+    <rect width="240" height="32" rx="4" fill="#090e18"/>
+    <text x="10" y="20" font-family="sans-serif" font-size="11" fill="#cbd5e1">10. PFD &amp; FBW FCC Interop</text>
+    <text x="210" y="20" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+</svg>
